@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>双12，全球狂欢节</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="http://static.jinrmb.com/tblm-hd/release/css/style.min.css?v=2019101803"/>
+	<style>
+	.tkl-copy{
+	margin-top:18px;
+	padding:20px 0;
+	width:95%;
+	}
+	.search-box{
+	border: none;
+	margin-top:25px;
+	background:none;
+   text-align:center;
+    width:100%;
+	}
+	.search-box input{
+		font-size:18px;
+		width:100%;
+		text-align:center;
+	}
+	</style>
+</head>
+<body>
+<div class="hd-box">
+<!--   <a href="javascript:;" class="ts-btn">投诉</a> -->
+</div>
+<div class="tkl-copy">
+  <p class="txt1">复制口令，打开手机淘宝，直达<span>12.12会场</span></p>
+  <p class="txt2 copy-text" id="copyTxt"></p>
+  <a href="javascript:;" title="" id="copybtn1">一键复制紅包口令</a>
+  <a href="javascript:;" title="" class="succeed-btn">领取成功，打开<i></i>即可领取紅包</a>
+</div>
+
+<div class="search-box">
+
+    <input type="search" name="" placeholder="双十二亿元超级红包等你来抢" disabled="disabled" style="background:transparent">
+    <i></i>
+  
+</div>
+
+<!-- 
+<div class="product-list product-recommend">
+  <h2>等你来抢</h2>
+  <div class="product-box">
+    <ul class="clearfix"></ul>
+  </div>
+</div>
+-->
+
+<div class="coupon-tklbox">
+  <div class="coupon-tkl copy-tkl" data-tkl="">
+    <div class="text">
+      <div class="step"></div>
+      <p class="tkl-text"></p>
+      <p class="zhu">注：下单后3分钟内系统自动绑定订单与推送提醒</p>
+    </div>
+    <div class="copy-btn"><a href="javascript:;" class="" id="copybtn2">一键复制淘口令</a><div class="share-content" ></div></div>
+    <a href="javascript:;" class="sy-link">优惠券使用说明</a>
+  </div>
+</div>
+<div class="video-box">
+  <div class="video-main">
+    <img src="http://static.jinrmb.com/taopopo/release/images/video.gif" alt="">
+    <span class="close"></span>
+  </div>
+</div>
+<div class="copy-succeed">复制成功！</div>
+<script>
+ var arr = [
+   "￥cEfVYyJWp2X￥",
+   "￥xep7YyJWIML￥",
+   "￥mftSYyJW7NU￥",
+   "￥heLwYyJWNG9￥",
+   "￥sw3mYyJWLzb￥",
+   "￥eNUOYyJ3q1S￥",
+   "￥alfpYyJ3IIB￥",
+   "￥RuxEYyJ3yQo￥"
+  ];
+  var dom = document.getElementById('copyTxt');
+  var math = RandomNumBoth(0,7);
+  dom.innerHTML=arr[math];
+ function RandomNumBoth(Min,Max){
+       var Range = Max - Min;
+       var Rand = Math.random();
+       var num = Min + Math.round(Rand * Range);
+       return num;
+ }
+</script>
+<script type="text/javascript" src="http://static.jinrmb.com/tblm-hd/release/js/lib/jquery-1.10.1.min.js"></script>
+<!-- <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+<script type="text/javascript" src="http://static.jinrmb.com/tblm-hd/release/js/lib/clipboard.min.js"></script>
+<!-- <script type="text/javascript" src="http://static.jinrmb.com/tblm-hd/release/js/page.min.js?v=2019101803"></script> -->
+	<script type="text/javascript" src="js/page.js"></script>
+</body>
+</html>
